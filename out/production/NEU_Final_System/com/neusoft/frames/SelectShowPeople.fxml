@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane stylesheets="@../Styles/SelectShowPeopleStyle.css" prefHeight="256.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.AdminSelectController">
+   <children>
+      <ImageView fitHeight="256.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../picture/Background1.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="174.0" layoutY="23.0" text="请选择显示人员">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <HBox layoutX="76.0" layoutY="89.0" spacing="50.0">
+         <children>
+            <RadioButton fx:id="adminselect" layoutX="126.0" layoutY="95.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="116.0" text="管理员">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="choice" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="doctorselect" layoutX="242.0" layoutY="95.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="116.0" text="医生" toggleGroup="$choice">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="patientselect" layoutX="358.0" layoutY="95.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="116.0" text="病人" toggleGroup="$choice">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <Button layoutX="174.0" layoutY="160.0" mnemonicParsing="false" onAction="#click_confirm" prefHeight="47.0" prefWidth="252.0" text="确认">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

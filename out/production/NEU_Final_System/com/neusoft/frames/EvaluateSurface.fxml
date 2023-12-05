@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane stylesheets="@../Styles/EvaluateSurfaceStyle.css" prefHeight="726.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.EvaluateSurfaceController">
+    <children>
+      <ImageView fitHeight="724.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../../../picture/Welcome1.jpg" />
+         </image>
+      </ImageView>
+        <TableView fx:id="InfoTable" layoutX="101.0" layoutY="75.0" prefHeight="483.0" prefWidth="999.0" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="100.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="姓名" />
+                <TableColumn fx:id="sexColumn" minWidth="1.0" prefWidth="159.0" text="性别" />
+                <TableColumn fx:id="templateNameColumn" prefWidth="98.0" text="模板ID" />
+                <TableColumn fx:id="templateTypeName" prefWidth="118.0" text="模板类型" />
+            <TableColumn fx:id="timeColumn" prefWidth="149.0" text="评估时间" />
+            <TableColumn fx:id="evaluatorColumn" prefWidth="134.0" text="评估人" />
+            <TableColumn fx:id="judgementColumn" prefWidth="100.0" text="评估意见" />
+            <TableColumn fx:id="scoreColumn" prefWidth="75.0" text="评估得分" />
+            </columns>
+        </TableView>
+        <Button fx:id="exitButton" layoutX="955.0" layoutY="587.0" mnemonicParsing="false" onAction="#click_back" prefHeight="58.0" prefWidth="145.0" text="返回">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

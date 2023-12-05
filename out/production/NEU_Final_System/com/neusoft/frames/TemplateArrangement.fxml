@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane stylesheets="@../Styles/TemplateArrangementStyle.css" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.TemplateArrangementController">
+    <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../../../picture/BackGround4.jpeg" />
+         </image>
+      </ImageView>
+        <TableView fx:id="InfoTable" editable="true" layoutX="80.0" layoutY="122.0" prefHeight="444.0" prefWidth="1050.0" AnchorPane.rightAnchor="70.0">
+            <columns>
+                <TableColumn fx:id="selectColumn" prefWidth="74.0" text=" " />
+            <TableColumn fx:id="TemplateIDColumn" prefWidth="75.0" text="模板ID" />
+            <TableColumn fx:id="TemplateTypeColumn" prefWidth="75.0" text="模板名称" />
+            </columns>
+        </TableView>
+      <Button fx:id="viewButton" layoutX="815.0" layoutY="81.0" mnemonicParsing="false" onAction="#click_view" prefHeight="30.0" prefWidth="145.0" text="预览模板" />
+          <Button fx:id="deleteButton" layoutX="298.0" layoutY="578.0" mnemonicParsing="false" onAction="#click_delete" prefHeight="40.0" prefWidth="170.0" text="批量删除">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button fx:id="addButton" layoutX="298.0" layoutY="626.0" mnemonicParsing="false" onAction="#click_add" prefHeight="40.0" prefWidth="170.0" text="新增">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button fx:id="modifyButton" layoutX="298.0" layoutY="676.0" mnemonicParsing="false" onAction="#click_modify" prefHeight="40.0" prefWidth="170.0" text="修改">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button fx:id="exitButton" layoutX="960.0" layoutY="578.0" mnemonicParsing="false" onAction="#click_exit" prefHeight="63.0" prefWidth="170.0" text="退出">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+      <Button layoutX="985.0" layoutY="81.0" mnemonicParsing="false" onAction="#click_arrangeQuestion" prefHeight="30.0" prefWidth="145.0" text="问题管理" />
+      <TextField fx:id="IDAdd" layoutX="80.0" layoutY="579.0" promptText="模板ID" />
+      <TextField fx:id="typeAdd" layoutX="80.0" layoutY="626.0" promptText="模板类型" />
+    </children>
+</AnchorPane>

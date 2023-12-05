@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane stylesheets="@../Styles/QuestionViewSurfaceStyle.css" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.QuestionViewController">
+    <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../../../picture/Welcome1.jpg" />
+         </image>
+      </ImageView>
+        <TableView fx:id="InfoTable" editable="true" layoutX="152.0" layoutY="112.0" prefHeight="444.0" prefWidth="896.0" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="152.0">
+            <columns>
+                <TableColumn fx:id="selectColumn" prefWidth="74.0" text=" " />
+                <TableColumn fx:id="IDColumn" prefWidth="75.0" text="问题ID" />
+            <TableColumn fx:id="TypeColumn" prefWidth="75.0" text="问题类型" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="75.0" text="问题描述" />
+            <TableColumn fx:id="ChoiceAColumn" prefWidth="75.0" text="选项 A" />
+            <TableColumn fx:id="ChoiceBColumn" prefWidth="75.0" text="选项 B" />
+            <TableColumn fx:id="ChoiceCColumn" prefWidth="75.0" text="选项 C" />
+            </columns>
+        </TableView>
+          <Button fx:id="deleteButton" layoutX="357.0" layoutY="687.0" mnemonicParsing="false" onAction="#click_delete" prefHeight="30.0" prefWidth="155.0" text="批量删除">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+      <Button fx:id="flushButton" layoutX="541.0" layoutY="568.0" mnemonicParsing="false" onAction="#click_flush" prefHeight="63.0" prefWidth="170.0" text="刷新">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+          <Button fx:id="modifyButton" layoutX="152.0" layoutY="687.0" mnemonicParsing="false" onAction="#click_modify" prefHeight="30.0" prefWidth="155.0" text="修改">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button fx:id="addButton" layoutX="152.0" layoutY="76.0" mnemonicParsing="false" onAction="#click_add" prefHeight="30.0" prefWidth="170.0" text="新增问题">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button fx:id="exitButton" layoutX="878.0" layoutY="578.0" mnemonicParsing="false" onAction="#click_exit" prefHeight="63.0" prefWidth="170.0" text="退出">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+      <TextField fx:id="typeAdd" layoutX="152.0" layoutY="609.0" prefHeight="30.0" prefWidth="155.0" promptText="问题类型" />
+      <TextField fx:id="IDAdd" layoutX="152.0" layoutY="569.0" prefHeight="30.0" prefWidth="155.0" promptText="问题ID" />
+      <TextField fx:id="ChoiceCAdd" layoutX="357.0" layoutY="649.0" prefHeight="30.0" prefWidth="155.0" promptText="选项C" />
+      <TextField fx:id="ChoiceBAdd" layoutX="357.0" layoutY="609.0" prefHeight="30.0" prefWidth="155.0" promptText="选项B" />
+      <TextField fx:id="ChoiceAAdd" layoutX="357.0" layoutY="569.0" prefHeight="30.0" prefWidth="155.0" promptText="选项A" />
+      <TextField fx:id="descriptionAdd" layoutX="152.0" layoutY="649.0" prefHeight="30.0" prefWidth="155.0" promptText="问题描述" />
+      <Button fx:id="AddToTemplate" layoutX="920.0" layoutY="76.0" mnemonicParsing="false" onAction="#click_AddToTemplate" prefHeight="30.0" prefWidth="128.0" text="添加到模板" />
+      <TextField fx:id="IDField" layoutX="711.0" layoutY="76.0" promptText="模板编号" />
+    </children>
+</AnchorPane>

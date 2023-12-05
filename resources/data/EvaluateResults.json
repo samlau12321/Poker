@@ -1,0 +1,7 @@
+{"patientName":"Roy","sex":"Female","score":45,"doctorName":"Shaun","judgement":"非常好","date":"2021-07-20","templateName":"3","templateType":"模板三"}
+{"patientName":"LKC","sex":"Male","score":25,"doctorName":"Collin","judgement":"非常好","date":"2021-07-20","templateName":"1","templateType":"模板一"}
+{"patientName":"Roy","sex":"Female","score":9,"doctorName":"Shaun","judgement":"差","date":"2021-07-20","templateName":"1","templateType":"模板一"}
+{"patientName":"Roy","sex":"Female","score":29,"doctorName":"Shaun","judgement":"一般","date":"2021-07-20","templateName":"3","templateType":"模板三"}
+{"patientName":"Roy","sex":"Female","score":25,"doctorName":"Shaun","judgement":"差","date":"2021-07-20","templateName":"3","templateType":"模板三"}
+{"patientName":"Roy","sex":"Female","score":25,"doctorName":"Shaun","judgement":"差","date":"2021-07-20","templateName":"3","templateType":"模板三"}
+{"patientName":"LKC","sex":"Male","score":25,"doctorName":"Collin","judgement":"非常好","date":"2021-07-20","templateName":"1","templateType":"模板一"}

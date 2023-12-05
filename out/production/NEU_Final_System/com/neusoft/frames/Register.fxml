@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.RegisterController" stylesheets="@../Styles/RegisterStyle.css">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../../../picture/BackGround4.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="text" layoutX="283.0" layoutY="86.0" prefHeight="55.0" prefWidth="427.0" text="颐养中心注册界面" textAlignment="CENTER" textFill="#070707" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="157.0">
+         <font>
+            <Font name="Microsoft Sans Serif" size="48.0" />
+         </font>
+      </Label>
+      <HBox layoutX="96.0" layoutY="202.0">
+         <children>
+            <Label layoutX="96.0" layoutY="187.0" text="请选择注册人员类型：" textFill="#070707">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Group>
+               <children>
+                  <RadioButton fx:id="isPatient" layoutX="628.0" layoutY="187.0" mnemonicParsing="false" onAction="#click_isPatient" prefHeight="35.0" prefWidth="131.0" text="病人" textFill="#070707">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="typeOfPeople" />
+                     </toggleGroup>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="isAdministrator" layoutX="497.0" layoutY="187.0" mnemonicParsing="false" onAction="#click_isAdministrator" prefHeight="35.0" prefWidth="131.0" text="工作人员" textFill="#070707" toggleGroup="$typeOfPeople">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="isDoctor" layoutX="366.0" layoutY="187.0" mnemonicParsing="false" onAction="#click_isDoctor" prefHeight="35.0" prefWidth="131.0" text="医生" textFill="#070707" toggleGroup="$typeOfPeople">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </Group>
+         </children>
+      </HBox>
+      <HBox layoutX="285.0" layoutY="251.0">
+         <children>
+            <Label layoutX="285.0" layoutY="251.0" text="姓名：" textFill="#070707">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Name" layoutX="366.0" layoutY="254.0" onAction="#input_Name" prefHeight="30.0" prefWidth="393.0" promptText="输入姓名" />
+         </children>
+      </HBox>
+      <HBox layoutX="285.0" layoutY="302.0">
+         <children>
+            <Label layoutX="285.0" layoutY="302.0" text="性别：" textFill="#070707">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="Male" layoutX="366.0" layoutY="302.0" mnemonicParsing="false" onAction="#isMale" prefHeight="35.0" prefWidth="131.0" text="男" textFill="#070707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Sex" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Female" layoutX="628.0" layoutY="302.0" mnemonicParsing="false" onAction="#isFemale" prefHeight="35.0" prefWidth="131.0" text="女" textFill="#070707" toggleGroup="$Sex">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox layoutX="231.0" layoutY="351.0">
+         <children>
+            <Label layoutX="231.0" layoutY="351.0" text="出生日期：" textFill="#070707">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="BornDate" layoutX="366.0" layoutY="354.0" onAction="#create_Borndate" prefHeight="30.0" prefWidth="393.0" promptText="在右侧选择日期" />
+         </children>
+      </HBox>
+      <HBox layoutX="258.0" layoutY="401.0">
+         <children>
+            <Label layoutX="258.0" layoutY="401.0" text="用户名：" textFill="#070707">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="LoginName" layoutX="366.0" layoutY="403.0" onAction="#create_LoginName" prefHeight="30.0" prefWidth="393.0" promptText="使用英文或者数字" />
+         </children>
+      </HBox>
+      <HBox layoutX="231.0" layoutY="448.0">
+         <children>
+            <Label layoutX="231.0" layoutY="448.0" text="登录密码：" textFill="#070707">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="366.0" layoutY="450.0" onAction="#create_password" prefHeight="30.0" prefWidth="393.0" promptText="使用英文与数字" />
+         </children>
+      </HBox>
+      <HBox layoutX="231.0" layoutY="491.0">
+         <children>
+            <Label layoutX="231.0" layoutY="491.0" text="联系电话：" textFill="#070707">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="telephoneNumber" layoutX="366.0" layoutY="494.0" onAction="#create_telephoneNumber" prefHeight="30.0" prefWidth="393.0" promptText="11位联系电话" />
+         </children>
+      </HBox>
+      <Button fx:id="resign" layoutX="614.0" layoutY="730.0" mnemonicParsing="false" onAction="#click_To_resign" prefHeight="45.0" prefWidth="145.0" text="注册">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="read" layoutX="366.0" layoutY="715.0" mnemonicParsing="false" onAction="#isRead" prefHeight="58.0" prefWidth="237.0" text="我已阅读并同意注册规则">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="204.0" layoutY="535.0" text="身份证号码：" textFill="#070707">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ID" layoutX="366.0" layoutY="537.0" onAction="#create_ID" prefHeight="30.0" prefWidth="393.0" promptText="18位身份证号码" />
+      <Label layoutX="285.0" layoutY="582.0" text="专长：" textFill="#070707">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="632.0" text="紧急联系人姓名：" textFill="#070707">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EmergencyName" layoutX="366.0" layoutY="634.0" onAction="#create_EmergencyName" prefHeight="30.0" prefWidth="393.0" promptText="仅病人必填" />
+      <TextField fx:id="EmergencyPhone" layoutX="366.0" layoutY="675.0" onAction="#create_EmergencyPhone" prefHeight="30.0" prefWidth="393.0" promptText="仅病人必填" />
+      <Label layoutX="150.0" layoutY="673.0" text="紧急联系人电话：" textFill="#070707">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="expertise" layoutX="366.0" layoutY="585.0" onAction="#create_expertise" prefHeight="30.0" prefWidth="393.0" promptText="医生必选" visibleRowCount="4">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="外科" />
+               <String fx:value="内科" />
+               <String fx:value="骨科" />
+               <String fx:value="心理科" />
+               <String fx:value="呼吸科" />
+               <String fx:value="皮肤科" />
+               <String fx:value="检验科" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+   </children>
+</AnchorPane>

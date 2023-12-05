@@ -1,0 +1,22 @@
+.button {
+    -fx-background-color: #fdb933;
+    -fx-border-radius: 20;
+    -fx-font-size: 13.0;
+    -fx-border-style: hidden;
+    -fx-cursor: hand;
+}
+
+.button:hover{
+    -fx-background-color: #009ad6;
+}
+
+#lblTitle {
+    -fx-font-size: 13px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: #fdb933;
+}
+
+.text-field:hover{
+    -fx-border-color: #b22222;
+    -fx-border-width: 2px;
+}

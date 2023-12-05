@@ -1,0 +1,41 @@
+#resign {
+    -fx-background-color: #d3d3d3;
+    -fx-cursor: hand;
+}
+
+#resign:hover{
+    -fx-background-color: #1e90ff;
+}
+
+.text-field{
+    -fx-font-family: "Garamond";
+    -fx-border-radius: 10;
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+    -fx-border-color: #b0c4de;
+}
+
+.label {
+    -fx-font-family: "Microsoft YaHei UI";
+        -fx-text-fill: #696969;
+}
+
+.date-picker{
+    -fx-font-family: "Agency FB";
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+}
+
+.radio-button{
+    -fx-cursor: hand;
+}
+
+.combo-box{
+    -fx-cursor: hand;
+}
+
+#read{
+    -fx-cursor: hand;
+}

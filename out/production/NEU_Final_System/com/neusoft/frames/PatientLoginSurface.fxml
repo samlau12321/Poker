@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@../Styles/PatientLoginSurfaceStyle.css" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.PatientLoginSurfaceController">
+    <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../../../picture/BackGround4.jpeg" />
+         </image>
+      </ImageView>
+        <TextField fx:id="NameToSeek" layoutX="80.0" layoutY="75.0" prefHeight="30.0" prefWidth="237.0" promptText="被查找人姓名" />
+        <Button fx:id="SearchButton" layoutX="360.0" layoutY="75.0" mnemonicParsing="false" onAction="#SearchByName" prefHeight="30.0" prefWidth="124.0" text="依姓名查询" />
+        <TableView fx:id="InfoTable" editable="true" layoutX="80.0" layoutY="122.0" prefHeight="290.0" prefWidth="1092.0" AnchorPane.rightAnchor="28.0">
+            <columns>
+                <TableColumn fx:id="selectColumn" prefWidth="150.0" />
+                <TableColumn fx:id="adminUserNameColumn" minWidth="1.0" prefWidth="150.0" text="用户名" />
+                <TableColumn fx:id="adminNameColumn" prefWidth="150.0" text="姓名" />
+                <TableColumn fx:id="DateColumn" prefWidth="150.0" text="年龄" />
+                <TableColumn fx:id="sexColumn" prefWidth="75.0" text="性别" />
+                <TableColumn fx:id="typeOfPeople" prefWidth="150.0" text="ID" />
+                <TableColumn fx:id="telephoneColumn" prefWidth="150.0" text="联系电话" />
+            </columns>
+        </TableView>
+          <TextField fx:id="NameAdd" layoutX="80.0" layoutY="486.0" prefHeight="30.0" prefWidth="161.0" promptText="姓名" />
+          <TextField fx:id="idAdd" layoutX="80.0" layoutY="584.0" prefHeight="30.0" prefWidth="161.0" promptText="ID" />
+          <TextField fx:id="sexAdd" layoutX="267.0" layoutY="535.0" prefHeight="30.0" prefWidth="161.0" promptText="性别" />
+          <TextField fx:id="LoginNameAdd" layoutX="80.0" layoutY="438.0" prefHeight="30.0" prefWidth="161.0" promptText="用户名" />
+          <TextField fx:id="ageAdd" layoutX="80.0" layoutY="535.0" prefHeight="30.0" prefWidth="161.0" promptText="年龄" />
+          <TextField fx:id="passwordAdd" layoutX="267.0" layoutY="486.0" prefHeight="30.0" prefWidth="161.0" promptText="密码" />
+          <TextField fx:id="PhoneAdd" layoutX="267.0" layoutY="438.0" prefHeight="30.0" prefWidth="161.0" promptText="联系电话" />
+          <Button fx:id="modifyButton" layoutX="76.0" layoutY="631.0" mnemonicParsing="false" onAction="#click_modify" prefHeight="63.0" prefWidth="161.0" text="修改">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+          <Button fx:id="exitButton" layoutX="267.0" layoutY="631.0" mnemonicParsing="false" onAction="#click_exit" prefHeight="63.0" prefWidth="161.0" text="退出">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+      <Label fx:id="WelcomeLabel" layoutX="1001.0" layoutY="14.0" prefHeight="40.0" prefWidth="191.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,172 @@
+#evaluateButton {
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-color: #4e6ef2;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-font-size: 20px;
+    -fx-text-fill: #4e6ef2;
+    -fx-padding: 6px 22px 5px;
+    -fx-font-weight: 400;
+    -fx-background-color: #fff;
+}
+
+#exitButton {
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-color: #4e6ef2;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-font-size: 20px;
+    -fx-text-fill: #4e6ef2;
+    -fx-padding: 6px 22px 5px;
+    -fx-font-weight: 400;
+    -fx-background-color: #fff;
+}
+
+#TemplateArrange {
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-color: #4e6ef2;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-font-size: 20px;
+    -fx-text-fill: #4e6ef2;
+    -fx-padding: 6px 22px 5px;
+    -fx-font-weight: 400;
+    -fx-background-color: #fff;
+}
+
+#evaluateButton:hover{
+    -fx-border-color: #2440b3;
+    -fx-text-fill: #2440b3;
+}
+
+#TemplateArrange :hover{
+    -fx-border-color: #2440b3;
+    -fx-text-fill: #2440b3;
+}
+
+#exitButton:hover{
+    -fx-border-color: #2440b3;
+    -fx-text-fill: #2440b3;
+}
+
+#addButton {
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-border-color: #4e6ef2;
+    -fx-background-color: #fff;
+    -fx-background-radius: 10;
+    -fx-text-fill: #4e6ef2;
+}
+
+#addButton:hover{
+    -fx-border-color: #2440b3;
+    -fx-text-fill: #2440b3;
+}
+
+#deleteButton{
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-border-color: #4e6ef2;
+    -fx-background-color: #fff;
+    -fx-background-radius: 10;
+    -fx-text-fill: #4e6ef2;
+}
+
+#deleteButton:hover{
+    -fx-border-color: #2440b3;
+    -fx-text-fill: #2440b3;
+}
+
+#modifyButton{
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-border-color: #4e6ef2;
+    -fx-background-color: #fff;
+    -fx-background-radius: 10;
+    -fx-text-fill: #4e6ef2;
+}
+
+#modifyButton:hover{
+    -fx-border-color: #2440b3;
+    -fx-text-fill: #2440b3;
+}
+
+#SearchButton{
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-border-color: #4e6ef2;
+    -fx-background-color: #fff;
+    -fx-background-radius: 10;
+    -fx-text-fill: #4e6ef2;
+}
+
+#SearchButton:hover{
+    -fx-border-color: #2440b3;
+    -fx-text-fill: #2440b3;
+}
+
+.text-field{
+    -fx-border-radius: 10px;
+    -fx-border-color: #e4e5e7;
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px;
+}
+
+.text-field:hover {
+    -fx-border-radius: 10px;
+    -fx-border-color: #b22222;
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px;
+}
+
+#NameToSeek{
+    -fx-border-radius: 10px;
+    -fx-border-color: #e4e5e7;
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #85868a;
+    -fx-text-fill: white;
+}
+
+#NameToSeek:hover{
+    -fx-background-radius: 10px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-width: 2px;
+    -fx-border-color: #b22222;
+    -fx-border-radius: 10px;
+}
+
+#SerachButton{
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-color: #ffd700;
+    -fx-background-color: #838488;
+    -fx-font-size: 12px;
+    -fx-text-fill: #ffd700;
+}
+
+#SerachButton:hover{
+    -fx-border-style: solid;
+    -fx-border-color:  #00bfff;
+    -fx-text-fill: #00bfff;
+}

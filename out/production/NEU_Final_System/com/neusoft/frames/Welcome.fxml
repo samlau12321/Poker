@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@../Styles/WelcomeStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.WelcomeController">
+   <children>
+      <ImageView fitHeight="710.0" fitWidth="1010.0">
+         <image>
+            <Image url="@../../../picture/Background5.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="UserName" layoutX="526.0" layoutY="295.0" prefHeight="30.0" prefWidth="144.0" />
+      <PasswordField fx:id="Password" layoutX="526.0" layoutY="331.0" prefHeight="27.0" prefWidth="144.0" />
+      <Button fx:id="clickExit" layoutX="526.0" layoutY="408.0" mnemonicParsing="false" onAction="#clickExit_Event" prefHeight="28.0" prefWidth="144.0" text="退出">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="resign_User" layoutX="526.0" layoutY="444.0" mnemonicParsing="false" onAction="#clickToResign" prefHeight="28.0" prefWidth="144.0" text="注册">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="SignInButton" layoutX="526.0" layoutY="369.0" mnemonicParsing="false" onAction="#click_Signin" prefHeight="28.0" prefWidth="144.0" text="登录">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

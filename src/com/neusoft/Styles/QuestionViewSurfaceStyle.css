@@ -1,0 +1,40 @@
+.button{
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-border-color: #696969;
+    -fx-background-color: #fff;
+    -fx-background-radius: 10;
+    -fx-text-fill: #696969;
+}
+
+.button:hover{
+    -fx-border-color: #b22222;
+    -fx-text-fill: #b22222;
+}
+
+.text-field{
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color:  #a9a9a9;
+}
+
+.text-field:hover{
+    -fx-border-color: gold;
+    -fx-text-fill: black;
+}
+.table-view .table-row-cell{
+    -fx-background-color: #f0f8ff;
+}
+
+.table-view.table-cell{
+    -fx-background-color: #a9a9a9;
+}
+
+.table-view:focused > .virtual-flow > .clipped-container > .sheet > .table-row-cell:filled:selected {
+    -fx-background: -fx-selection-bar;
+    -fx-table-cell-border-color: derive(-fx-selection-bar, 20%);
+    -fx-background-color: #4682b4;
+}

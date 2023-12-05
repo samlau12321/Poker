@@ -1,0 +1,41 @@
+.text-field{
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color:  #a9a9a9;
+}
+
+.text-field:hover{
+    -fx-border-color: #b22222;
+    -fx-border-width: 2px;
+}
+
+.combo-box{
+    -fx-background-radius: 10px;
+    -fx-border-color:  #778899;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+.combo-box:hover{
+    -fx-background-radius: 10px;
+    -fx-border-color:  #b22222;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+.button{
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-border-color: #778899;
+    -fx-background-color: #fff;
+    -fx-background-radius: 10;
+    -fx-text-fill: #778899;
+}
+
+.button:hover{
+    -fx-border-color: #b22222;
+    -fx-text-fill: #b22222;
+}

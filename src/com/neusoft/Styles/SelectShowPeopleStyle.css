@@ -1,0 +1,16 @@
+.button{
+    -fx-cursor: hand;
+    -fx-background-color: gold;
+}
+
+.button:hover{
+    -fx-background-color: #00bfff;
+}
+
+-radio-button{
+    -fx-cursor: hand;
+}
+
+.radio-button .dot{
+    -fx-mark-color: #00bfff;
+}

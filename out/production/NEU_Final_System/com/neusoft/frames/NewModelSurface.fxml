@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.lang.String?>
+<AnchorPane stylesheets="@../Styles/NewModelSurfaceStyle.css" prefHeight="419.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.NewModelSurfaceController">
+   <children>
+      <ImageView fitHeight="419.0" fitWidth="752.0" layoutY="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../picture/BackGround4.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="Back" layoutX="236.0" layoutY="322.0" mnemonicParsing="false" onAction="#click_back" prefHeight="47.0" prefWidth="97.0" text="返回" />
+      <Button fx:id="Add" layoutX="438.0" layoutY="322.0" mnemonicParsing="false" onAction="#click_add" prefHeight="47.0" prefWidth="97.0" text="添加" />
+      <TextField fx:id="description" layoutX="333.0" layoutY="107.0" />
+      <TextField fx:id="ChoiceA" layoutX="333.0" layoutY="145.0" />
+      <TextField fx:id="ChoiceB" layoutX="333.0" layoutY="185.0" />
+      <TextField fx:id="ChoiceC" layoutX="333.0" layoutY="228.0" />
+      <ComboBox fx:id="typeOfQuestion" layoutX="333.0" layoutY="273.0" prefHeight="30.0" prefWidth="202.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="A" />
+               <String fx:value="B" />
+               <String fx:value="C" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Label layoutX="236.0" layoutY="106.0" prefHeight="30.0" prefWidth="97.0" text="问题描述：" />
+      <Label layoutX="236.0" layoutY="145.0" prefHeight="30.0" prefWidth="97.0" text="选项A：" />
+      <Label layoutX="236.0" layoutY="185.0" prefHeight="30.0" prefWidth="97.0" text="选项B：" />
+      <Label layoutX="236.0" layoutY="228.0" prefHeight="30.0" prefWidth="97.0" text="选项C：" />
+      <Label layoutX="236.0" layoutY="273.0" prefHeight="30.0" prefWidth="97.0" text="问题类型" />
+      <Label layoutX="236.0" layoutY="66.0" prefHeight="30.0" prefWidth="97.0" text="问题编号：" />
+      <TextField fx:id="description0" layoutX="333.0" layoutY="67.0" />
+   </children>
+</AnchorPane>

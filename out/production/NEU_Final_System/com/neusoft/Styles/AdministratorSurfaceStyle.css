@@ -1,0 +1,54 @@
+.button{
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-color: #4e6ef2;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10;
+    -fx-font-size: 20px;
+    -fx-text-fill: #4e6ef2;
+    -fx-padding: 6px 22px 5px;
+    -fx-font-weight: 400;
+    -fx-background-color: #fff;
+}
+
+.button:hover{
+    -fx-border-color: #2440b3;
+    -fx-text-fill: #2440b3;
+}
+
+.text-field{
+    -fx-opacity: 1;
+    -fx-text-fill:  #000000;
+    -fx-background-radius: 10px;
+    -fx-background-color: #ffffff;
+    -fx-border-style: dashed;
+    -fx-border-width: 0px 0px 1.5px 0px;
+    -fx-border-color: white white black white;
+}
+
+#InfoTable {
+    -fx-font-size: 10pt;
+    -fx-color: #d3d3d3;
+    -fx-overflow:auto;
+}
+
+
+#InfoTable:hover{
+    -fx-background-color: #ffd700;
+}
+
+#NameToSeek {
+    -fx-background-color: #848589;
+    -fx-text-fill: black;
+}
+
+#SearchButton {
+    -fx-cursor: hand;
+    -fx-content-display: none;
+    -fx-border-style: solid;
+    -fx-border-color: #ffd700;
+    -fx-background-color: #838488;
+    -fx-font-size: 12px;
+    -fx-text-fill: #ffd700;
+}

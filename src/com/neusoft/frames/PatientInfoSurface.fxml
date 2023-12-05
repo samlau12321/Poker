@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" stylesheets="@../Styles/PatientInfoSurfaceStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.PatientInfoSurfaceController">
+    <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../../../picture/BackGround4.jpeg" />
+         </image>
+      </ImageView>
+        <TextField fx:id="NameToSeek" layoutX="80.0" layoutY="35.0" prefHeight="30.0" prefWidth="237.0" promptText="被查找人姓名" />
+        <Button fx:id="SerachButton" layoutX="360.0" layoutY="35.0" mnemonicParsing="false" onAction="#SearchByName" prefHeight="30.0" prefWidth="124.0" text="依姓名查询" />
+        <TableView fx:id="InfoTable" editable="true" layoutX="80.0" layoutY="77.0" prefHeight="407.0" prefWidth="1050.0" AnchorPane.rightAnchor="70.0">
+            <columns>
+                <TableColumn fx:id="selectColumn" prefWidth="74.0" text=" " />
+                <TableColumn fx:id="adminNameColumn" prefWidth="115.0" text="姓名" />
+                <TableColumn fx:id="DateColumn" prefWidth="83.0" text="年龄" />
+                <TableColumn fx:id="telephoneColumn" prefWidth="168.0" text="联系电话" />
+                <TableColumn fx:id="sexColumn" prefWidth="101.0" text="性别" />
+                <TableColumn fx:id="typeOfPeople" prefWidth="88.0" text="ID" />
+            <TableColumn fx:id="EmergencyColumn" prefWidth="151.0" text="紧急联系人" />
+            <TableColumn fx:id="EmergencyPhoneColumn" prefWidth="194.0" text="紧急联系人电话" />
+            <TableColumn fx:id="DoctorNameColumn" prefWidth="75.0" text="医生姓名" />
+            </columns>
+        </TableView>
+          <Button fx:id="deleteButton" layoutX="543.0" layoutY="625.0" mnemonicParsing="false" onAction="#click_delete" prefHeight="30.0" prefWidth="124.0" text="批量删除">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button fx:id="addButton" layoutX="131.0" layoutY="626.0" mnemonicParsing="false" onAction="#click_add" prefHeight="30.0" prefWidth="124.0" text="新增">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <Button fx:id="evaluateButton" layoutX="960.0" layoutY="578.0" mnemonicParsing="false" onAction="#click_evaluate" prefHeight="63.0" prefWidth="170.0" text="评估">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+          <Button fx:id="exitButton" layoutX="960.0" layoutY="655.0" mnemonicParsing="false" onAction="#click_exit" prefHeight="63.0" prefWidth="170.0" text="退出">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+          <Button fx:id="modifyButton" layoutX="317.0" layoutY="625.0" mnemonicParsing="false" onAction="#click_modify" prefHeight="30.0" prefWidth="124.0" text="修改">
+              <font>
+                  <Font size="14.0" />
+              </font>
+          </Button>
+          <TextField fx:id="LoginNameAdd" layoutX="131.0" layoutY="498.0" prefHeight="30.0" prefWidth="124.0" promptText="用户名" />
+          <TextField fx:id="ageAdd" layoutX="131.0" layoutY="578.0" prefHeight="30.0" prefWidth="124.0" promptText="年龄" />
+          <TextField fx:id="idAdd" layoutX="317.0" layoutY="498.0" prefHeight="30.0" prefWidth="124.0" promptText="ID" />
+          <TextField fx:id="emergencyPhoneAdd" layoutX="543.0" layoutY="578.0" prefHeight="30.0" prefWidth="124.0" promptText="联系人电话" />
+          <TextField fx:id="passwordAdd" layoutX="317.0" layoutY="578.0" prefHeight="30.0" prefWidth="124.0" promptText="密码" />
+          <TextField fx:id="PhoneAdd" layoutX="317.0" layoutY="536.0" prefHeight="30.0" prefWidth="124.0" promptText="联系电话" />
+          <TextField fx:id="sexAdd" layoutX="543.0" layoutY="498.0" prefHeight="30.0" prefWidth="124.0" promptText="性别" />
+          <TextField fx:id="emergencyAdd" layoutX="543.0" layoutY="536.0" prefHeight="30.0" prefWidth="124.0" promptText="紧急联系人" />
+          <TextField fx:id="NameAdd" layoutX="131.0" layoutY="536.0" prefHeight="30.0" prefWidth="124.0" promptText="姓名" />
+      <Button fx:id="doctorButton" layoutX="795.0" layoutY="35.0" mnemonicParsing="false" onAction="#click_arrangeDoctor" prefHeight="30.0" prefWidth="124.0" text="指派医生" />
+      <TextField fx:id="DoctorToGive" layoutX="524.0" layoutY="35.0" prefHeight="30.0" prefWidth="237.0" promptText="指派医生姓名" />
+      <Label fx:id="WelcomeLabel" layoutX="967.0" layoutY="30.0" prefHeight="40.0" prefWidth="211.0" text="Label" textAlignment="RIGHT">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewButton" layoutX="960.0" layoutY="498.0" mnemonicParsing="false" onAction="#click_viewEvaluate" prefHeight="63.0" prefWidth="170.0" text="查看评估结果">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Label layoutX="70.0" layoutY="498.0" prefHeight="30.0" prefWidth="61.0" text="用户名：" />
+      <Label layoutX="70.0" layoutY="536.0" prefHeight="30.0" prefWidth="61.0" text="姓名：" />
+      <Label layoutX="70.0" layoutY="578.0" prefHeight="30.0" prefWidth="61.0" text="年龄：" />
+      <Label layoutX="255.0" layoutY="498.0" prefHeight="30.0" prefWidth="61.0" text="ID：" />
+      <Label layoutX="255.0" layoutY="536.0" prefHeight="30.0" prefWidth="61.0" text="电话：" />
+      <Label layoutX="255.0" layoutY="578.0" prefHeight="30.0" prefWidth="61.0" text="密码：" />
+      <Label layoutX="441.0" layoutY="498.0" prefHeight="30.0" prefWidth="101.0" text="性别：" />
+      <Label layoutX="441.0" layoutY="536.0" prefHeight="30.0" prefWidth="101.0" text="紧急联系人：" />
+      <Label layoutX="441.0" layoutY="578.0" prefHeight="30.0" prefWidth="101.0" text="联系人电话：" />
+    </children>
+</AnchorPane>

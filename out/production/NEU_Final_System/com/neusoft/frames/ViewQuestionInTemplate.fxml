@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane stylesheets="@../Styles/ViewQuestionStyle.css" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.QuestionViewController">
+    <children>
+      <ImageView fitHeight="800.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../../../picture/Welcome1.jpg" />
+         </image>
+      </ImageView>
+        <TableView fx:id="InfoTable" editable="true" layoutX="152.0" layoutY="112.0" prefHeight="450.0" prefWidth="896.0" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="152.0">
+            <columns>
+                <TableColumn fx:id="selectColumn" prefWidth="74.0" text=" " />
+                <TableColumn fx:id="IDColumn" prefWidth="75.0" text="问题ID" />
+                <TableColumn fx:id="TypeColumn" prefWidth="75.0" text="问题类型" />
+                <TableColumn fx:id="descriptionColumn" prefWidth="75.0" text="问题描述" />
+                <TableColumn fx:id="ChoiceAColumn" prefWidth="75.0" text="选项 A" />
+                <TableColumn fx:id="ChoiceBColumn" prefWidth="75.0" text="选项 B" />
+                <TableColumn fx:id="ChoiceCColumn" prefWidth="75.0" text="选项 C" />
+            </columns>
+        </TableView>
+          <Button fx:id="exitButton" layoutX="878.0" layoutY="594.0" mnemonicParsing="false" onAction="#click_exit" prefHeight="63.0" prefWidth="170.0" text="返回">
+              <font>
+                  <Font size="24.0" />
+              </font>
+          </Button>
+    </children>
+</AnchorPane>
